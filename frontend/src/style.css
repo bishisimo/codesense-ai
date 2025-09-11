@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background: #304156;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  background: #f0f2f5;
+  overflow: auto;
+  padding: 20px;
+}
+
+.el-header {
+  background: #409eff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.el-menu--dark {
+  background: #304156;
+}
+
+.el-menu--dark .el-menu-item {
+  color: #bfcbd9;
+}
+
+.el-menu--dark .el-menu-item:hover,
+.el-menu--dark .el-menu-item.is-active {
+  background: #263445;
+  color: white;
+}
+
+.status-tag {
+  font-size: 12px;
+}
+
+.score-tag {
+  font-weight: bold;
+}
+
+.review-content {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.markdown-content {
+  line-height: 1.6;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  margin: 16px 0 8px 0;
+  color: #303133;
+}
+
+.markdown-content p {
+  margin: 8px 0;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.markdown-content code {
+  background: #f1f2f3;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-family: 'Courier New', monospace;
+}
+
+.markdown-content pre {
+  background: #f1f2f3;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.filter-form {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-table {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stats-card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stats-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #409eff;
+  margin-bottom: 8px;
+}
+
+.stats-label {
+  color: #909399;
+  font-size: 14px;
+}

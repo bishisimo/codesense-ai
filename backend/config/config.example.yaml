@@ -1,0 +1,66 @@
+# CodeSense AI 后端配置文件示例
+# 复制此文件为 config.yaml 并根据需要修改配置
+
+# 服务器配置
+server:
+  host: "0.0.0.0"
+  port: 8080
+  debug: false
+  reload: false
+
+# 数据库配置
+database:
+  type: "mysql"  # mysql, postgresql
+  url: "mysql+asyncmy://user:password@localhost/codesense_ai"
+
+# GitLab配置
+gitlab:
+  url: "https://gitlab.example.com"
+  token: "your-gitlab-token"
+  webhook_secret: "your-webhook-secret"
+
+# AI配置
+ai:
+  provider: "deepseek"  # deepseek, openai, anthropic
+  api_key: "your-ai-api-key"
+  model: "deepseek-chat"
+  max_tokens: 4000
+  timeout_seconds: 120
+
+# 认证配置
+auth:
+  secret_key: "your-secret-key-change-in-production"
+  algorithm: "HS256"
+  access_token_expire_minutes: 30
+
+# 日志配置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/app.log"
+  max_size: 10485760  # 10MB
+  backup_count: 5
+
+# 通知配置
+notification:
+  email:
+    enabled: false
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    username: "your-email@gmail.com"
+    password: "your-email-password"
+    from_email: "your-email@gmail.com"
+  
+  feishu:
+    enabled: false
+    webhook_url: "https://open.feishu.cn/open-apis/bot/v2/hook/your-webhook-url"
+
+# 调度器配置
+scheduler:
+  enabled: true
+  sync_interval_minutes: 30
+  review_interval_minutes: 5
+
+# 安全配置
+security:
+  cors_origins: ["http://localhost:3000", "http://localhost:5173"]

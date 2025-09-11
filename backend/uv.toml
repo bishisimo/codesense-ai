@@ -1,0 +1,8 @@
+# uv配置文件
+# 用于配置uv包管理工具的行为
+
+# 使用中国镜像源加速下载
+index-url = "https://mirrors.ustc.edu.cn/pypi/simple"
+
+# 缓存配置
+cache-dir = ".uv-cache"

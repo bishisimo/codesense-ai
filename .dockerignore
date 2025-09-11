@@ -1,0 +1,70 @@
+# Git相关
+.git
+.gitignore
+.gitattributes
+
+# 文档和说明
+README.md
+*.md
+docs/
+
+# 开发工具配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 日志文件
+*.log
+logs/
+*.log.*
+
+# 临时文件
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# 测试相关
+test_*.py
+*_test.py
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 前端开发文件
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+frontend/coverage/
+
+# 后端开发文件
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+backend/.mypy_cache/
+backend/.ruff_cache/
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 环境配置
+.env
+.env.local
+.env.*.local
+
+# Docker相关
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# 其他
+data/
+config/config.yaml
